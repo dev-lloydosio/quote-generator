@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=cdnjs.com"/>
+    <script src="https://kit.fontawesome.com/bb4bcd8179.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="quote-container" id="quote-container">
+        <!-- Copy Quote -->
+        <div class="copy-container">
+            <button class="copy-button" id="copy" onclick="copyQuote()" title="Copy Quote">
+            <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote">Clever men are good, but they are not the best.</span>
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author">Thomas Carlyle</span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="btn twitter-button" id="twitter" title="Tweet This!">
+            <i class="fab fa-twitter"></i>
+            </button>
+            <button class="btn dark-mode" onclick="darkMode()" title="Light/Dark Mode">
+                <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                </svg>
+            </button>
+            <button class="btn new-quote"id="new-quote">New Quote</button>
+        </div>
+    </div>
+    <!-- Loader -->
+    <div class="stacks-loader" id="loader">
+        <div class="loader-container">
+            <div class="load"></div>
+            <div class="load"></div>
+            <div class="load"></div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
