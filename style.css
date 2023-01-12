@@ -127,12 +127,12 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.copy-button:hover, .copy-button:focus, .copy-button:active {
+.copy-button:hover {
   background-color: #e2e2e2;
   color: white;
 }
 
-.mode-switch .copy-button:hover, .copy-button:focus, .copy-button:active {
+.mode-switch .copy-button:hover {
   background-color: #1d1d1d;
   color: rgb(0, 0, 0);
 }
